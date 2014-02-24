@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 int num =50; // Global variable
+void count(void);
+
 int main(void){
 
 	printf("the numbie is %d\n", num);
@@ -12,5 +14,19 @@ int main(void){
 		printf("the number in for loop is %d\n",num);
 	}
 	printf("the local variable is %d\n", num);
+	
+	printf("\n");
+	x = 0;
+	for (;x<5;x++){
+		count();
+	}
 	return 0;
+}
+
+
+void count(void) {
+	static int counter = 0; // static variable, when variable be created, it would keep to save in memory.
+	printf("the static counter is %d\n", counter);
+	counter++;
+
 }
