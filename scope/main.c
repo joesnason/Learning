@@ -21,8 +21,11 @@ int main(void){
 		count();
 	}
 
-	extern double anotherVar;
+	extern double anotherVar; // the value var is set in another.c
 	printf("the another Var is %f\n",anotherVar);
+
+	anotherVar = 100;  // we still can change the value
+	printf("the another Var become %f\n", anotherVar);
 	return 0;
 }
 
