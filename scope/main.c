@@ -20,6 +20,9 @@ int main(void){
 	for (;x<5;x++){
 		count();
 	}
+
+	extern double anotherVar;
+	printf("the another Var is %f\n",anotherVar);
 	return 0;
 }
 
