@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 
-#include "another.c"
+#include "another.h"
 
 int main(void){
 
