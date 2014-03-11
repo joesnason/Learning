@@ -6,6 +6,9 @@
 #define swap_int(A,B); {int t; \
 							t = A; A = B; B = t	;}
 
+#define max(A,B)   ((A>B)?A:B)
+#define max3(A,B,C)  (max(max(A,B),C))
+
 int main(void){
 
 	my_printf();
@@ -32,5 +35,10 @@ int my_printf(void){
 	swap_int(big,small);
 	printf("after to swap.....\n");
 	printf("the big number is %d , the small number is %d \n",big,small);
+
+// define macro test
+	printf("get the max number %d\n", max(big,small));
+	printf("get the max number of three is %d\n", max3(big,small,num));
+
 	return 0;
 }
